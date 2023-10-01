@@ -1,5 +1,18 @@
 <div class="root">
-  <section class="navigation-wrapper">
-    <app-navigation></app-navigation>
-  </section>
+  <main>
+    <section class="navigation-wrapper">
+      <app-navigation></app-navigation>
+    </section>
+
+    <section class="banner-wrapper">
+        <div class="banner-container">
+          <div class="banner-text-container">
+            <h5>New Arrival</h5>
+            <h1>Discover Our <br> New Collection</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            <app-button [buttonPlaceHolder]="'BUY NOW'" [buttonStyle]="buttonStyle"></app-button>
+          </div>
+        </div>
+    </section>
+  </main>
 </div>

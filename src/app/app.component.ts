@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  buttonStyle = 'width:220px; height:75px; color:white; padding: 25px 50px; background-color: var(--primary);'
 }

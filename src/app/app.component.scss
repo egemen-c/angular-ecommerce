@@ -1,0 +1,27 @@
+.banner-container {
+  width: 100%;
+  height: 716px;
+  background-image: url(../assets/images/banner.png);
+  z-index: -1;
+  & .banner-text-container {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    padding: 20px 50px;
+    background-color: #FFF3E3;
+    width: 643px;
+    height: 443;
+    z-index: 1;
+    border-radius: 10px;
+
+    & h5, p {
+      color: #333333;
+      font-size: 1rem;
+    }
+
+    & h1 {
+      color: #B88E2F;
+      font-size: 3.25rem;
+    }
+  }
+}
