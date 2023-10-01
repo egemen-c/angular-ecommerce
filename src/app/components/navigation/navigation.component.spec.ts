@@ -1,14 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavigationComponent } from './navigation.component';
-
+import { MatIconModule } from '@angular/material/icon';
 describe('NavigationComponent', () => {
   let component: NavigationComponent;
   let fixture: ComponentFixture<NavigationComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavigationComponent]
+      declarations: [NavigationComponent],
+      imports: [MatIconModule]
     });
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
