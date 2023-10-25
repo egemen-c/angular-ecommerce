@@ -1,0 +1,64 @@
+<div class="categories-container">
+  <div class="title">
+    <h1>Browse The Range</h1>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+  </div>
+  <div class="categories">
+    <ng-container *ngFor="let category of categories; index as i">
+      <div>
+        <img src="../../../assets/images/categories-img-{{i+1}}.jpg">
+        <span>{{category}}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+<style lang="scss">
+  .categories-container {
+    width: calc(100% - 250px);
+    padding: 50px 125px;
+    & .title {
+      width: 100%;
+      text-align: center; 
+      & h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      & h5 {
+        font-size: 1.25em;
+        color: #666666;
+        font-weight: lighter;
+      }
+
+      & h1, h5 {
+        margin: 10px;
+      }
+    }
+
+    & .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-content: space-around;
+      & div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        & img {
+        border-radius: 10px;
+        max-width: 100%;
+        max-height: 480px;
+        object-fit: cover;
+        }
+        & span {
+          padding-top: 15px;
+          font-size: 1.3em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+</style>
