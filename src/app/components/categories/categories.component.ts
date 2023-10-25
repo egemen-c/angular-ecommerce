@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { CategoriesService } from 'src/app/services/categories.service';
-
 @Component({
   selector: 'app-categories',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './categories.component.html',
   styleUrls: ['./categories.component.scss']
 })
