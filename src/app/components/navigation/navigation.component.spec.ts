@@ -8,9 +8,8 @@ describe('NavigationComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavigationComponent],
-      imports: [MatIconModule]
-    });
+    imports: [MatIconModule, NavigationComponent]
+});
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
