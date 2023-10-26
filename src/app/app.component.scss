@@ -1,8 +1,11 @@
 .banner-container {
   width: 100%;
   height: 716px;
-  background-image: url(../assets/images/banner.png);
   z-index: -1;
+  & img {
+    position: relative !important;
+    width: none;
+  }
   & .banner-text-container {
     position: absolute;
     right: 50px;
