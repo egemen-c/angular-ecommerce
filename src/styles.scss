@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'assets/css/helpers/_normalize.css';
 @use 'assets/css/base.scss';
+
+@mixin clamp-lines($line-count) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-count;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
 html, body {
   font-family: var(--poppins);
   font-size: 16px;
