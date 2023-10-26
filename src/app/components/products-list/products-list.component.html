@@ -1,0 +1,16 @@
+<div class="products-list">
+  <ng-container *ngFor="let product of products">
+    <app-product [product]="product"></app-product>
+  </ng-container>
+</div>
+
+<style>
+  .products-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 50px;
+    justify-content: center;
+    align-content: center;
+  }
+</style>
