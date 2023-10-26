@@ -4,7 +4,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 todo:
 - [ ] The photos should be moved to a CDN service.
 - [ ] Currency Converter.
-The photos should be moved to a CDN service.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
