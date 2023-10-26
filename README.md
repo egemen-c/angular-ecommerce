@@ -3,6 +3,7 @@ live demo: https://main--angular-ecommerce-netlify.netlify.app/
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 todo:
 - [ ] The photos should be moved to a CDN service.
+- [ ] Currency Converter.
 The photos should be moved to a CDN service.
 ## Development server
 
