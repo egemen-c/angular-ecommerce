@@ -6,16 +6,15 @@ import { CategoriesService } from 'src/app/services/categories.service';
   standalone: true,
   imports: [CommonModule, NgOptimizedImage],
   templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.scss']
+  styleUrls: ['./categories.component.scss'],
 })
-
 export class CategoriesComponent implements OnInit {
   categories: String[] = [];
-  
+
   constructor(private categoriesService: CategoriesService) {}
   ngOnInit() {
-    this.categoriesService.getAllCategories().subscribe( response => {
-      this.categories = response.slice(1, 4)
-    })
+    this.categoriesService.getAllCategories().subscribe((response) => {
+      this.categories = response.slice(1, 4);
+    });
   }
 }
