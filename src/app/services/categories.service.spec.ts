@@ -7,9 +7,8 @@ describe('CategoriesService', () => {
   let http: HttpClient;
   let categories: string[];
   beforeEach(() => {
-
     TestBed.configureTestingModule({
-      imports: [HttpClientModule]
+      imports: [HttpClientModule],
     });
     service = TestBed.inject(CategoriesService);
     http = TestBed.inject(HttpClient);
@@ -20,7 +19,7 @@ describe('CategoriesService', () => {
   });
 
   it('should call getAllBooks and return an array of Books', () => {
-    service.getAllCategories().subscribe((res) => {
+    service.getAllCategories().subscribe(res => {
       expect(res).toEqual(categories);
     });
   });

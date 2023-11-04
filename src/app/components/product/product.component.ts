@@ -6,9 +6,8 @@ import { Product } from 'src/app/models/product.model';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss']
+  styleUrls: ['./product.component.scss'],
 })
-
 export class ProductComponent {
   @Input() product: Product = {
     id: 0,
@@ -16,6 +15,6 @@ export class ProductComponent {
     price: 0,
     category: '',
     description: '',
-    image: ''
+    image: '',
   };
 }

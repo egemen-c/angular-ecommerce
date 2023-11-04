@@ -13,7 +13,7 @@ export class CategoriesComponent implements OnInit {
 
   constructor(private categoriesService: CategoriesService) {}
   ngOnInit() {
-    this.categoriesService.getAllCategories().subscribe((response) => {
+    this.categoriesService.getAllCategories().subscribe(response => {
       this.categories = response.slice(1, 4);
     });
   }
