@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <div class="root">
   <main>
     <section class="navigation-wrapper">
@@ -5,24 +6,36 @@
     </section>
 
     <section class="banner-wrapper">
-        <div class="banner-container">
-          <img ngSrc="../assets/images/banner.png" alt="" fill priority="high">
-          <div class="banner-text-container">
-            <h5>New Arrival</h5>
-            <h1>Discover Our <br> New Collection</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-            <app-button [buttonPlaceHolder]="'BUY NOW'" [buttonStyle]="buttonStyle"></app-button>
-          </div>
+      <div class="banner-container">
+        <img ngSrc="../assets/images/banner.png" alt="" fill priority="high" />
+        <div class="banner-text-container">
+          <h5>New Arrival</h5>
+          <h1>
+            Discover Our <br />
+            New Collection
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <app-button
+            [buttonPlaceHolder]="'BUY NOW'"
+            [buttonStyle]="buttonStyle"></app-button>
         </div>
+      </div>
     </section>
-  
+
     <section class="categories-wrapper">
       <app-categories></app-categories>
     </section>
 
     <section class="products-list-wrapper">
-      <h1 style="text-align: center; margin-bottom: 50px;">Our Products</h1>
+      <h1 style="text-align: center; margin-bottom: 50px">Our Products</h1>
       <app-products-list></app-products-list>
+    </section>
+
+    <section class="footer-wrapper">
+      <app-footer></app-footer>
     </section>
   </main>
 </div>

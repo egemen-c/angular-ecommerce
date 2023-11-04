@@ -6,13 +6,14 @@
   <div class="categories">
     <ng-container *ngFor="let category of categories; index as i">
       <div>
-        <img ngSrc="../../../assets/images/categories-img-{{i+1}}.jpg" fill>
-        <span>{{category}}</span>
+        <img
+          ngSrc="../../../assets/images/categories-img-{{ i + 1 }}.jpg"
+          fill />
+        <span>{{ category }}</span>
       </div>
     </ng-container>
   </div>
 </div>
-
 
 <style lang="scss">
   .categories-container {

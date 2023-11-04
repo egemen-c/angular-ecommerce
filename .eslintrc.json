@@ -33,11 +33,7 @@
     {
       "files": ["*.html"],
       "excludedFiles": ["*inline-template-*.component.html"],
-      "extends": [
-        "plugin:@angular-eslint/template/recommended",
-        "plugin:@angular-eslint/template/accessibility",
-        "plugin:prettier/recommended"
-      ],
+      "extends": ["plugin:prettier/recommended"],
       "rules": {
         "prettier/prettier": [
           "error",

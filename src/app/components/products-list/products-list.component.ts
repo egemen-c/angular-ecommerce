@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
   standalone: true,
   imports: [CommonModule, ProductComponent],
   templateUrl: './products-list.component.html',
-  styleUrls: ['./products-list.component.scss']
+  styleUrls: ['./products-list.component.scss'],
 })
 export class ProductsListComponent {
   products: Product[] = [];
@@ -20,6 +20,6 @@ export class ProductsListComponent {
       this.products = response;
 
       console.log(this.products);
-    })
+    });
   }
 }

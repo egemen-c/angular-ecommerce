@@ -5,15 +5,16 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule, NavigationComponent, AppComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA]
-}));
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      imports: [RouterTestingModule, NavigationComponent, AppComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    })
+  );
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
-  
 });
