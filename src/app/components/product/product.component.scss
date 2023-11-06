@@ -10,7 +10,11 @@
 .product-container {
   border: 2px solid #f4f5f7;
   width: 285px;
-  height: 445px;
+
+  &:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
   & .product-image {
     width: 100%;
     height: 300px;
